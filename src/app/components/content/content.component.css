@@ -1,0 +1,39 @@
+.background {
+    height: 250px;
+    background-color: rgb(92, 88, 108);
+    color: white;
+    padding : 50px;
+    width: 765px;
+    /* margin:30px; */
+    position: absolute;
+    top:150px;
+    left:330px;
+    border-radius: 5%;
+
+}
+img{
+    width: 100px;
+    margin: 20px;
+    border-radius: 10%;
+    right: auto;
+    left: auto;
+}
+.product{
+    border: 2px solid white ;
+    width: 150px;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10%;
+    right: auto;
+    left: auto;
+}
+.products
+{
+    right: auto;
+    left: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+ 
+}

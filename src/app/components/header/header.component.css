@@ -1,0 +1,25 @@
+img {
+    width: 120px;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    
+}
+div{
+    height: 120px;
+    background-color: rgb(255, 255, 255);
+}
+.date {
+    position: absolute;
+    top: 70px;
+    right: 70px;
+    color: rgb(92, 88, 108);
+}
+.line{
+    border: 2px solid rgb(92, 88, 108);
+    position: absolute;
+    top: 120px;
+    width: 95%;
+    height: 0%;
+
+}

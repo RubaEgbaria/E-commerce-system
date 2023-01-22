@@ -1,0 +1,19 @@
+.footer{
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 0px;
+    width: 95%;
+    text-align: center;
+    color: rgb(92, 88, 108);
+    padding: 20px;
+    margin: 5px;
+    border-radius: 10%;
+    /* right: 20px; */
+}
+.line 
+{
+    position: absolute;
+    right: 50px;
+    bottom: 0%;
+}
