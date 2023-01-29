@@ -13,6 +13,7 @@ export class ContentComponent implements OnInit{
   showSherlock: boolean = false;
   showTele : boolean = false;
   showWatch: boolean = false;
+  toShow : String = '';
 
   constructor(){}
   ngOnInit(): void {
@@ -32,11 +33,14 @@ export class ContentComponent implements OnInit{
     this.showSherlock = false;
     this.showTele = false;
     this.showWatch = false;
+    this.toShow = 'vr';
 
     this.imgHeight =  250;
     this.imgWidth = 400;
   }
   bigImgSher() : void {
+    this.toShow = 'sherlock';
+
     this.showSherlock = true;
     this.showTele = false;
     this.showWatch = false;
@@ -45,6 +49,8 @@ export class ContentComponent implements OnInit{
     this.imgWidth = 400;
   }
   bigImgTele() : void {
+    this.toShow = 'telescope';
+
     this.showSherlock = false;
     this.showTele = true;
     this.showWatch = false;
@@ -53,6 +59,8 @@ export class ContentComponent implements OnInit{
     this.imgWidth = 400;
   }
   bigImgWatch() : void {
+    this.toShow = 'watch';
+
     this.showSherlock = false;
     this.showTele = false;
     this.showWatch = true;

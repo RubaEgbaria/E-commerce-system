@@ -28,7 +28,7 @@
         <h4> Smart Watch </h4>
        </div>
     </div>
-    <div class="bigImg" *ngIf="showVR==true">
+    <!-- <div class="bigImg" *ngIf="showVR==true">
         <img  [height]="imgHeight" [width]="imgWidth" src="https://www.lastprice.co.il/uploadimages/Oculus-Quest-2-128GB.jpg"/>
     </div>
     <div class="bigImg" *ngIf="showSherlock==true">
@@ -39,5 +39,19 @@
     </div>
     <div class="bigImg" *ngIf="showWatch==true">
         <img  [height]="imgHeight" [width]="imgWidth" src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ0KhhW87SjMpAy_PTuboZHrWvD9xrEyKXywwX_thH0fa7hb2ldKXfcontD3nElnMaL9cf2H6IbaJv03HCqoIqFe74QbGq3s844P1RsSabJaYRMJAZrbXRulQ&usqp=CAE"/>
+    </div> -->
+    <div [ngSwitch]="toShow">
+    <div class="bigImg" *ngSwitchCase="'vr'">
+        <img  [height]="imgHeight" [width]="imgWidth" src="https://www.lastprice.co.il/uploadimages/Oculus-Quest-2-128GB.jpg"/>
     </div>
+    <div class="bigImg" *ngSwitchCase="'sherlock'">
+        <img  [height]="imgHeight" [width]="imgWidth" src="https://books.google.co.il/books/content?id=FTeJtAEACAAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE73sPnTloypGp5niEKGIgzvjCgZSlJsYfXnDcVzoGHmjPqVyucTeSRdp9fBed-IbJc26dJstmoiLA3la6OflOx1_HEoh-Np_3FObrgcBNNEE0cmSdCdSruPpq4M_DuZUQjqaJjMB"/>
+    </div>
+    <div class="bigImg" *ngSwitchCase="'telescope'">
+        <img  [height]="imgHeight" [width]="imgWidth" src="https://nimax-img.de/Produktbilder/zoom/19195_20/Celestron-Telescope-AC-60-700-LCM-GoTo.jpg"/>
+    </div>
+    <div class="bigImg" *ngSwitchCase="'watch'">
+        <img  [height]="imgHeight" [width]="imgWidth" src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ0KhhW87SjMpAy_PTuboZHrWvD9xrEyKXywwX_thH0fa7hb2ldKXfcontD3nElnMaL9cf2H6IbaJv03HCqoIqFe74QbGq3s844P1RsSabJaYRMJAZrbXRulQ&usqp=CAE"/>
+    </div>
+</div>
 </div>
